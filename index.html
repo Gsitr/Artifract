@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artifact Aghanim's Blessing</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/base.js" defer></script>
+</head>
+<body> <!--- p = player, c = combat, s = support, h = hand --->
+  <div class="game-wrap">
+    <div class="p2bar pbar">
+      <div class="p2pass ppass"></div>
+      <div class="p2gold-cont pgold-cont">
+				<div class="p2gold pgold">3</div>
+			</div>
+      <div class="p2hcards hcards">
+				<div class="p2hcard hcard"></div>
+				<div class="p2hcard hcard"></div>
+				<div class="p2hcard hcard"></div>
+				<div class="p2hcard hcard"></div>
+				<div class="p2hcard hcard"></div>
+			</div>
+      <div class="p2fount fount"></div>
+      <div class="p2info-cont pinfo-cont">
+				<div class="p2name pname">Rtificer</div>
+			</div>
+    </div>
+    <div class="board">
+      <div class="left lane">
+        <div class="p2side p2">
+          <div class="s-row">
+            <div class="sc1 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="sc2 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="sc3 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="tower-mana tl">
+							<div class="mana tl">3/3</div>
+							<div class="tower tl">60</div>
+						</div>
+            <div class="sc4 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="sc5 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="sc6 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+          </div>
+          <div class="c-row">
+            <div class="cc1 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc2 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc3 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc4 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc5 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc6 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc7 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+          </div>
+        </div>
+        <div class="p1side p1">
+          <div class="c-row">
+            <div class="cc1 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc2 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc3 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc4 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc5 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc6 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc7 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+          </div>
+          <div class="s-row">
+            <div class="sc1 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="sc2 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="sc3 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="tower-mana bl">
+							<div class="tower bl">60</div>
+							<div class="mana bl">3/3</div>
+						</div>
+            <div class="sc4 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="sc5 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="sc6 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+          </div>
+        </div>
+      </div>
+			<img class="rune" src="css/gfx/rune_bg.png" alt="Rune">
+      <div class="right lane">
+        <div class="p2side p2">
+          <div class="s-row">
+            <div class="sc1 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="sc2 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="sc3 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="tower-mana tr">
+							<div class="mana tr">3/3</div>
+							<div class="tower tr">60</div>
+						</div>
+            <div class="sc4 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="sc5 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="sc6 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+          </div>
+          <div class="c-row">
+            <div class="cc1 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc2 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc3 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc4 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc5 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc6 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc7 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+          </div>
+        </div>
+        <div class="p1side p1">
+          <div class="c-row">
+            <div class="cc1 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc2 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc3 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc4 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc5 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc6 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="cc7 ccard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+          </div>
+          <div class="s-row">
+            <div class="sc1 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="sc2 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="sc3 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="tower-mana br">
+							<div class="tower br">60</div>
+							<div class="mana br">3/3</div>
+						</div>
+            <div class="sc4 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="sc5 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+            <div class="sc6 scard">
+							<div class="bcardtop"></div>
+							<div class="bcardart">
+								<div class="bcardstatus"></div>
+								<div class="bcardmid"></div>
+								<div class="bcardabils abils">
+									<div class="abil1 abil"></div>
+									<div class="abil2 abil"></div>
+									<div class="abil3 abil"></div>
+								</div>
+							</div>
+							<div class="bcardbot">
+								<div class="bcardat">3</div>
+								<div class="bcardar"></div>
+								<div class="bcardhe">7</div>
+							</div>
+						</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p1bar pbar">
+      <div class="p1info-cont pinfo-cont">
+				<div class="p1name pname">Gabe Newell</div>
+			</div>
+      <div class="p1fount fount"></div>
+      <div class="p1hcards hcards">
+				<div class="p1hcard hcard"></div>
+				<div class="p1hcard hcard"></div>
+				<div class="p1hcard hcard"></div>
+				<div class="p1hcard hcard"></div>
+				<div class="p1hcard hcard"></div>
+				<div class="p1hcard hcard"></div>
+				<div class="p1hcard hcard"></div>
+				<div class="p1hcard hcard"></div>
+				<div class="p1hcard hcard"></div>
+				<div class="p1hcard hcard"></div>
+			</div>
+      <div class="p1gold-cont pgold-cont">
+				<div class="p1gold pgold">3</div>
+			</div>
+      <div class="p1pass ppass"></div>
+    </div>
+  </div>
+</body>
+</html>

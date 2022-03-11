@@ -1,4 +1,3 @@
+*.vscode
+
 ideas.txt
-.gitattributes
-.vscode/*
-!.vscode/settings.json

@@ -134,13 +134,13 @@ body,
 .tower.tl,.tower.tr {
 	bottom: 5%;
 }
-.tower.bl, .tower.br {
+.tower.bl,.tower.br {
 	top: 5%;
 }
 .mana.tl,.mana.tr {
 	top: 4%;
 }
-.mana.bl, .mana.br {
+.mana.bl,.mana.br {
 	bottom: 4%;
 }
 

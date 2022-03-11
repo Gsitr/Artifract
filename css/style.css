@@ -13,13 +13,13 @@
 * {
 	margin: 0;
 	padding: 0;
-  box-sizing: border-box;
-  user-select: none;
+	box-sizing: border-box;
+	user-select: none;
 	-webkit-user-drag: none;
 }
 :root {
-  margin: unset;
-  background-color: #222;
+	margin: unset;
+	background-color: #222;
 	font-family: 'Radiance';
 	font-size: 1rem;
 	cursor: url(gfx/cursor.png), auto;
@@ -113,7 +113,7 @@ body,
 	align-items: center;
 	border-radius: 50%;
 	font-family: 'Artifact Numbers';
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+	text-shadow: 2px 2px 2px rgb(0, 0, 0);
 	color: #e5e5e5;
 }
 .tower {
@@ -200,7 +200,7 @@ body,
 	flex: 1;
 	color: lavender;
 	font-family: 'Artifact Numbers';
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+	text-shadow: 2px 2px 2px rgb(0, 0, 0);
 	font-size: clamp(7px, calc(2px + (24 - 2) * ((100vw - 360px) / 1560)), 30px);
 	text-align: center;
 	height: 150%;
@@ -253,7 +253,7 @@ body,
 .pgold {
 	color: lemonchiffon;
 	font-family: 'Artifact Numbers';
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+	text-shadow: 2px 2px 2px rgb(0, 0, 0);
 	font-size: clamp(8px, calc(2px + (19) * ((100vw - 300px) / 1000)), 40px);
 }
 .p1gold-cont {
@@ -324,7 +324,7 @@ body,
 	text-align: center;
 	color: lemonchiffon;
 	font-family: 'Radiance';
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+	text-shadow: 2px 2px 2px rgb(0, 0, 0);
 	font-size: clamp(7px, calc(2px + (20 - 2) * ((100vw - 360px) / 1560)), 24px); /* original: font-size: clamp(16px, calc(16px + (28 - 16) * ((100vw - 360px) / 1560)), 28px); */
 }
 
@@ -339,13 +339,13 @@ body,
 
 @media (min-aspect-ratio: 16/9) {
 	.game-wrap {
-			width: 172.8vh;
-			height: 97.2vh;
+		width: 172.8vh;
+		height: 97.2vh;
 	}
 }
 @media (max-aspect-ratio: 16/9) {
 	.game-wrap {
-			width: 96vw;
-			height: 54vw;
+		width: 96vw;
+		height: 54vw;
 	}
 }

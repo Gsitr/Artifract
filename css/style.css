@@ -49,16 +49,15 @@ body,
 .rune,
 .pgold-cont,
 .ppass,
-.abil, .bcardat, .bcardar, .bcardhe, .hcard {
+.abil, .bcardat, .bcardar, .bcardhe, .hcard, .hspelltext-cont, .hc-mana-cont {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: 50%;
 }
 
-.bcardart {
+.bcardart, .hcardart {
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: 50%;
 }
 
 .game-wrap {
@@ -147,6 +146,7 @@ body,
 .scard,
 .ccard {
 	flex-direction: column;
+	justify-content: center;
 	display: flex;
 	flex: 1;
 	border-radius: 6%;
@@ -155,7 +155,7 @@ body,
 }
 .bcardtop {
 	display: flex;
-	flex: .16;
+	flex: .155;
 	/*white-space: nowrap; (not sure?)*/
 }
 .bcardart {
@@ -277,7 +277,8 @@ body,
 	box-shadow: -.2vmin -.3vmin .5vmin var(--black);
 	display: flex;
 	flex-direction: column;
-	border-radius: 6%;
+	justify-content: center;
+	border-radius: 4%;
 	z-index: 4;
 }
 .p2hcard {
@@ -290,15 +291,73 @@ body,
 }
 .p1hcard {
 	top: 35%;
-	background-image: url(gfx/card_back.png);
   transition: .1s ease-in-out;
 	transform: scale(1.4);
+	background: var(--cardblue);
 }
 .p1hcard:hover,
 .p1hcard:active {
-    transform: translateY(-65.1%) scale(1.8);
-    z-index: 5;
+	box-shadow: 0 0 .3vmin .33vmin #0ff;
+  transform: translateY(-67%) scale(1.8);
+  z-index: 5;
 }
+
+.hcardtop {
+	flex: .22;
+	display: flex;
+	align-items: center;
+}
+.hc-mana-cont {
+	flex: .7;
+	height: 140%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(gfx/mana_bg_small.png);
+	z-index: 1;
+}
+.hc-mana {
+	font-family: 'Artifact Numbers';
+	text-shadow: .06vmin .05vmin .15vmin rgb(0, 0, 0);
+	font-size: clamp(3px, calc(6px + (6) * ((100vw - 300px) / 1000)), 17px);
+	color: var(--white);
+}
+.hc-name-cont {
+	display: flex;
+}
+.hc-name {
+	font-family: 'Radiance Condensed';
+	text-shadow: .06vmin .05vmin .15vmin rgb(0, 0, 0);
+	font-size: clamp(3px, calc(1px + (5) * ((100vw - 300px) / 1000)), 12px);
+	color: var(--white);
+}
+
+.hcardart {
+	position: relative;
+	flex: 1;
+	background-image: url(card_art/full_art/10278.png);
+}
+
+.hspelltext-cont {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	background-image: url(gfx/cardspell_opaque.png);
+}
+.hspelltext {
+	width: 93%;
+	font-family: 'Radiance';
+	text-shadow: .06vmin .05vmin .15vmin rgb(0, 0, 0);
+	font-size: clamp(2px, calc(1px + (4) * ((100vw - 300px) / 1000)), 11px);
+	text-align: center;
+	color: var(--white);
+}
+
+.hcardbot {
+	flex: .088;
+}
+
 
 .fount {
 	flex: 1;

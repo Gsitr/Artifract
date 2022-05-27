@@ -1,46 +1,46 @@
 @font-face {
-	font-family: 'Radiance';
-	src: url('fonts/Radiance-Regular.woff') format('woff'), url('fonts/Radiance-Regular.woff2') format('woff2');
+  font-family: 'Radiance';
+  src: url('fonts/Radiance-Regular.woff') format('woff'), url('fonts/Radiance-Regular.woff2') format('woff2');
 }
 @font-face {
-	font-family: 'Radiance Condensed';
-	src: url('fonts/Radiance-RegularCondensed.woff2') format('woff2'), url('fonts/Radiance-RegularCondensed.woff') format('woff');
+  font-family: 'Radiance Condensed';
+  src: url('fonts/Radiance-RegularCondensed.woff2') format('woff2'), url('fonts/Radiance-RegularCondensed.woff') format('woff');
 }
 @font-face {
-	font-family: 'Artifact Numbers';
-	src: url('fonts/ArtifactNumbersBold.woff2') format('woff2'), url('fonts/ArtifactNumbersBold.woff') format('woff')
+  font-family: 'Artifact Numbers';
+  src: url('fonts/ArtifactNumbersBold.woff2') format('woff2'), url('fonts/ArtifactNumbersBold.woff') format('woff')
 }
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	user-select: none;
-	-webkit-user-drag: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 :root {
-	margin: unset;
-	background-color: #222;
-	font-family: 'Radiance';
-	font-size: 1rem;
-	cursor: url(gfx/cursor.png), auto;
-	/*Colors */
-	--black: #171717;
-	--white: #e5e5e5;
-	--gold: #AD862B;
-	--dwhite: #B2ABA3;
-	/* Card Colors */
-	--cardblue: -webkit-linear-gradient(90deg, #0d3855, #205579);
-	--cardred: -webkit-linear-gradient(90deg, #541a27, #84293C);
-	--cardgreen: -webkit-linear-gradient(90deg, #38542b, #527b3f);
-	--cardblack: -webkit-linear-gradient(90deg, #2c2733, #332d3b);
-	--cardgold: -webkit-linear-gradient(90deg, #907024, #AD862B);
-	/*Item Cards*/
-	--creepgray: -webkit-linear-gradient(90deg, #4d5453, #67716f);
-	/* Also Colorless */
-	--creepblue: -webkit-linear-gradient(90deg, #434d54, #5a6770);
-	--creepred: -webkit-linear-gradient(90deg, #544347, #705a5f);
-	--creepgreen: -webkit-linear-gradient(90deg, #495443, #61705a);
-	--creepblack: -webkit-linear-gradient(90deg, #4b4354, #635a70);
+  margin: unset;
+  background-color: #222;
+  font-family: 'Radiance';
+  font-size: 1rem;
+  cursor: url(gfx/cursor.png), auto;
+  /*Colors */
+  --black: #171717;
+  --white: #e5e5e5;
+  --gold: #AD862B;
+  --dwhite: #B2ABA3;
+  /* Card Colors */
+  --cardblue: -webkit-linear-gradient(90deg, #0d3855, #205579);
+  --cardred: -webkit-linear-gradient(90deg, #541a27, #84293C);
+  --cardgreen: -webkit-linear-gradient(90deg, #38542b, #527b3f);
+  --cardblack: -webkit-linear-gradient(90deg, #2c2733, #332d3b);
+  --cardgold: -webkit-linear-gradient(90deg, #907024, #AD862B);
+  /*Item Cards*/
+  --creepgray: -webkit-linear-gradient(90deg, #4d5453, #67716f);
+  /* Also Colorless */
+  --creepblue: -webkit-linear-gradient(90deg, #434d54, #5a6770);
+  --creepred: -webkit-linear-gradient(90deg, #544347, #705a5f);
+  --creepgreen: -webkit-linear-gradient(90deg, #495443, #61705a);
+  --creepblack: -webkit-linear-gradient(90deg, #4b4354, #635a70);
 }
 
 body,
@@ -50,362 +50,362 @@ body,
 .pgold-cont,
 .ppass,
 .abil, .bcardat, .bcardar, .bcardhe, .hcard, .hspelltext-cont, .hc-mana-cont {
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .bcardart, .hcardart {
-	background-size: cover;
-	background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .game-wrap {
-	position: relative;
-	background-image: url(gfx/artifactboard.jpg);
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	display: flex;
-	margin: auto;
-	overflow: hidden;
-	gap: 2%;
+  position: relative;
+  background-image: url(gfx/artifactboard.jpg);
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  margin: auto;
+  overflow: hidden;
+  gap: 2%;
 }
 
 .board {
-	width: 90%;
-	flex: 3;
-	display: flex;
-	gap: 5%;
+  width: 90%;
+  flex: 3;
+  display: flex;
+  gap: 5%;
 }
 .lane {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	gap: 6%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6%;
 }
 .p1side,
 .p0side {
-	flex-direction: column;
-	display: flex;
-	flex: 1;
-	gap: 4%;
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  gap: 4%;
 }
 .s-row,
 .c-row {
-	display: flex;
-	flex: 1;
-	gap: 1.5%;
+  display: flex;
+  flex: 1;
+  gap: 1.5%;
 }
 
 .tower-mana {
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex: 1;
 }
 .tower,.mana {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 50%;
-	font-family: 'Artifact Numbers';
-	text-shadow: 2px 2px 2px rgb(0, 0, 0);
-	color: #e5e5e5;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-family: 'Artifact Numbers';
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  color: #e5e5e5;
 }
 .tower {
-	flex: 2;
-	width: 88.2%;
-	border: .22em solid var(--dwhite);
-	background: var(--black);
-	font-size: clamp(10px, calc(2px + (24) * ((100vw - 250px) / 1000)), 56px);
-	z-index: 1;
+  flex: 2;
+  width: 88.2%;
+  border: .22em solid var(--dwhite);
+  background: var(--black);
+  font-size: clamp(10px, calc(2px + (24) * ((100vw - 250px) / 1000)), 56px);
+  z-index: 1;
 }
 .mana {
-	width: 56.3%;
-	flex: 1.5;
-	border: .08em solid #213364;
-	background-image: radial-gradient(#567be0, #213364);
-	font-size: clamp(6px, calc(2px + (12) * ((100vw - 300px) / 1000)), 28px);
+  width: 56.3%;
+  flex: 1.5;
+  border: .08em solid #213364;
+  background-image: radial-gradient(#567be0, #213364);
+  font-size: clamp(6px, calc(2px + (12) * ((100vw - 300px) / 1000)), 28px);
 }
 .tower.tl,.tower.tr {
-	bottom: 5%;
+  bottom: 5%;
 }
 .tower.bl,.tower.br {
-	top: 5%;
+  top: 5%;
 }
 .mana.tl,.mana.tr {
-	top: 4%;
+  top: 4%;
 }
 .mana.bl,.mana.br {
-	bottom: 4%;
+  bottom: 4%;
 }
 
 .scard,
 .ccard {
-	flex-direction: column;
-	justify-content: center;
-	display: flex;
-	flex: 1;
-	border-radius: 6%;
-	box-shadow: -.3vmin -.4vmin .5vmin var(--black);
-	background: var(--cardblue);
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  flex: 1;
+  border-radius: 6%;
+  box-shadow: -.3vmin -.4vmin .5vmin var(--black);
+  background: var(--cardblue);
 }
 .bcardtop {
-	display: flex;
-	flex: .155;
-	/*white-space: nowrap; (not sure?)*/
+  display: flex;
+  flex: .155;
+  /*white-space: nowrap; (not sure?)*/
 }
 .bcardart {
-	flex: 2;
-	flex-direction: column;
-	display: flex;
-	background-image: url(card_art/full_art/10065.png);
+  flex: 2;
+  flex-direction: column;
+  display: flex;
+  background-image: url(card_art/full_art/10065.png);
 }
 .bcardstatus {
-	display: flex;
-	flex: .9;
+  display: flex;
+  flex: .9;
 }
 .bcardmid {
-	display: flex;
-	flex: 2.032;
+  display: flex;
+  flex: 2.032;
 }
 .bcardabils {
-	position: relative;
-	bottom: 3%;
-	justify-content: space-evenly;
-	display: flex;
-	flex: 1;
+  position: relative;
+  bottom: 3%;
+  justify-content: space-evenly;
+  display: flex;
+  flex: 1;
 }
 .abil {
-	flex: .27;
-	background-image: url(card_art/mini_icons/10519.png);
-	border: .15vmin solid gray;
+  flex: .27;
+  background-image: url(card_art/mini_icons/10519.png);
+  border: .15vmin solid gray;
 }
 .bcardbot {
-	align-items: center;
-	overflow: visible;
-	position: relative;
-	display: flex;
-	flex: .5;
+  align-items: center;
+  overflow: visible;
+  position: relative;
+  display: flex;
+  flex: .5;
 }
 .bcardat, .bcardar, .bcardhe {
-	justify-content: center;
-	flex-direction: column;
-	position: relative;
-	bottom: 4%;
-	display: flex;
-	flex: 1;
-	color: lavender;
-	font-family: 'Artifact Numbers';
-	text-shadow: 2px 2px 2px rgb(0, 0, 0);
-	font-size: clamp(7px, calc(2px + (24 - 2) * ((100vw - 360px) / 1560)), 30px);
-	text-align: center;
-	height: 150%;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  bottom: 4%;
+  display: flex;
+  flex: 1;
+  color: lavender;
+  font-family: 'Artifact Numbers';
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  font-size: clamp(7px, calc(2px + (24 - 2) * ((100vw - 360px) / 1560)), 30px);
+  text-align: center;
+  height: 150%;
 }
 .bcardat {
-	background-image: url(gfx/cardstat_attack.png);
-	right: 2%;
+  background-image: url(gfx/cardstat_attack.png);
+  right: 2%;
 }
 /*.bcardar {
-	background-image: url(gfx/cardstat_armor.png);
+  background-image: url(gfx/cardstat_armor.png);
 }*/
 .bcardhe {
-	background-image: url(gfx/cardstat_health.png);
-	left: 2%;
+  background-image: url(gfx/cardstat_health.png);
+  left: 2%;
 }
 
 .pbar {
-	/* gap: 1%; */
-	min-width: 100%;
-	flex: .8;
-	display: flex;
-	justify-content: center;
+  /* gap: 1%; */
+  min-width: 100%;
+  flex: .8;
+  display: flex;
+  justify-content: center;
 }
 .p1bar {
-	flex: .75;
+  flex: .75;
 }
 
 .ppass {
-	position: relative;
-	height: 85%;
-	flex: 1;
-	align-self: center;
+  position: relative;
+  height: 85%;
+  flex: 1;
+  align-self: center;
 }
 .p1pass {
-	background-image: url(gfx/button_notyour_turn.png);
+  background-image: url(gfx/button_notyour_turn.png);
 }
 .p0pass {
-	background-image: url(gfx/button_your_turn.png);
+  background-image: url(gfx/button_your_turn.png);
 }
 
 .pgold-cont {
-	align-self: center;
-	flex: 1;
-	height: 60%;
-	background-image: url(gfx/cardstat_goldcost.png);
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  align-self: center;
+  flex: 1;
+  height: 60%;
+  background-image: url(gfx/cardstat_goldcost.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .pgold {
-	color: lemonchiffon;
-	font-family: 'Artifact Numbers';
-	text-shadow: 2px 2px 2px rgb(0, 0, 0);
-	font-size: clamp(8px, calc(2px + (19) * ((100vw - 300px) / 1000)), 40px);
+  color: lemonchiffon;
+  font-family: 'Artifact Numbers';
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  font-size: clamp(8px, calc(2px + (19) * ((100vw - 300px) / 1000)), 40px);
 }
 .p0gold-cont {
-	position: relative;
-	left: 1%;
+  position: relative;
+  left: 1%;
 }
 .p1gold-cont {
-	position: relative;
-	right: 1%;
+  position: relative;
+  right: 1%;
 }
 
 .hcards {
-	flex: 6;
-	display: flex;
-	justify-content: center;
+  flex: 6;
+  display: flex;
+  justify-content: center;
 }
 .hcard {
-	height: 87%;
-	position: relative;
-	flex: .08333;
-	box-shadow: -.2vmin -.3vmin .5vmin var(--black);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	border-radius: 4%;
-	z-index: 4;
+  height: 87%;
+  position: relative;
+  flex: .08333;
+  box-shadow: -.2vmin -.3vmin .5vmin var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 4%;
+  z-index: 4;
 }
 .p1hcard {
-	height: 92.7%;
-	top: -31%;
-	background-image: url(gfx/card_back.png);
-	transform: rotate(180deg);
-	transform: scale(1.3);
-	box-shadow: -.2vmin .3vmin .5vmin var(--black);
+  height: 92.7%;
+  top: -31%;
+  background-image: url(gfx/card_back.png);
+  transform: rotate(180deg);
+  transform: scale(1.3);
+  box-shadow: -.2vmin .3vmin .5vmin var(--black);
 }
 .p0hcard {
-	top: 35%;
+  top: 35%;
   transition: .1s ease-in-out;
-	transform: scale(1.4);
-	background: var(--cardblue);
+  transform: scale(1.4);
+  background: var(--cardblue);
 }
 .p0hcard:hover,
 .p0hcard:active {
-	box-shadow: 0 0 .3vmin .33vmin #0ff;
+  box-shadow: 0 0 .3vmin .33vmin #0ff;
   transform: translateY(-67%) scale(1.8);
   z-index: 5;
 }
 
 .hcardtop {
-	flex: .22;
-	display: flex;
-	align-items: center;
+  flex: .22;
+  display: flex;
+  align-items: center;
 }
 .hc-mana-cont {
-	flex: .7;
-	height: 140%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-image: url(gfx/mana_bg_small.png);
-	z-index: 1;
+  flex: .7;
+  height: 140%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(gfx/mana_bg_small.png);
+  z-index: 1;
 }
 .hc-mana {
-	font-family: 'Artifact Numbers';
-	text-shadow: .06vmin .05vmin .15vmin rgb(0, 0, 0);
-	font-size: clamp(3px, calc(6px + (6) * ((100vw - 300px) / 1000)), 17px);
-	color: var(--white);
+  font-family: 'Artifact Numbers';
+  text-shadow: .06vmin .05vmin .15vmin rgb(0, 0, 0);
+  font-size: clamp(3px, calc(6px + (6) * ((100vw - 300px) / 1000)), 17px);
+  color: var(--white);
 }
 .hc-name-cont {
-	display: flex;
+  display: flex;
 }
 .hc-name {
-	font-family: 'Radiance Condensed';
-	text-shadow: .06vmin .05vmin .15vmin rgb(0, 0, 0);
-	font-size: clamp(3px, calc(1px + (5) * ((100vw - 300px) / 1000)), 12px);
-	color: var(--white);
+  font-family: 'Radiance Condensed';
+  text-shadow: .06vmin .05vmin .15vmin rgb(0, 0, 0);
+  font-size: clamp(3px, calc(1px + (5) * ((100vw - 300px) / 1000)), 12px);
+  color: var(--white);
 }
 
 .hcardart {
-	position: relative;
-	flex: 1;
-	background-image: url(card_art/full_art/10278.png);
+  position: relative;
+  flex: 1;
+  background-image: url(card_art/full_art/10278.png);
 }
 
 .hspelltext-cont {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex: 1;
-	background-image: url(gfx/cardspell_opaque.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-image: url(gfx/cardspell_opaque.png);
 }
 .hspelltext {
-	width: 93%;
-	font-family: 'Radiance';
-	text-shadow: .06vmin .05vmin .15vmin rgb(0, 0, 0);
-	font-size: clamp(2px, calc(1px + (4) * ((100vw - 300px) / 1000)), 11px);
-	text-align: center;
-	color: var(--white);
+  width: 93%;
+  font-family: 'Radiance';
+  text-shadow: .06vmin .05vmin .15vmin rgb(0, 0, 0);
+  font-size: clamp(2px, calc(1px + (4) * ((100vw - 300px) / 1000)), 11px);
+  text-align: center;
+  color: var(--white);
 }
 
 .hcardbot {
-	flex: .088;
+  flex: .088;
 }
 
 
 .fount {
-	flex: 1;
+  flex: 1;
 }
 
 .pinfo-cont {
-	flex: 1;
+  flex: 1;
 }
 .p1info-cont {
-	position: relative;
-	top: 8%;
-	left: .17%;
-	background-image: url(gfx/avatar_badge_player0.png);
+  position: relative;
+  top: 8%;
+  left: .17%;
+  background-image: url(gfx/avatar_badge_player0.png);
 }
 .p0info-cont {
-	position: relative;
-	bottom: 2%;
-	background-image: url(gfx/avatar_badge_player1.png);
+  position: relative;
+  bottom: 2%;
+  background-image: url(gfx/avatar_badge_player1.png);
 }
 .pname {
-	position: relative;
-	top: 77%;
-	text-align: center;
-	color: lemonchiffon;
-	font-family: 'Radiance';
-	text-shadow: 2px 2px 2px rgb(0, 0, 0);
-	font-size: clamp(7px, calc(2px + (20 - 2) * ((100vw - 360px) / 1560)), 24px);
-	/* original: font-size: clamp(16px, calc(16px + (28 - 16) * ((100vw - 360px) / 1560)), 28px); */
+  position: relative;
+  top: 77%;
+  text-align: center;
+  color: lemonchiffon;
+  font-family: 'Radiance';
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  font-size: clamp(7px, calc(2px + (20 - 2) * ((100vw - 360px) / 1560)), 24px);
+  /* original: font-size: clamp(16px, calc(16px + (28 - 16) * ((100vw - 360px) / 1560)), 28px); */
 }
 
 .rune {
-	position: absolute;
-	height: 23%;
-	top: 37%;
-	left: 43.6%;
+  position: absolute;
+  height: 23%;
+  top: 37%;
+  left: 43.6%;
 }
 
 
 
 @media (min-aspect-ratio: 16/9) {
-	.game-wrap {
-		width: 172.8vh;
-		height: 97.2vh;
-	}
+  .game-wrap {
+    width: 172.8vh;
+    height: 97.2vh;
+  }
 }
 @media (max-aspect-ratio: 16/9) {
-	.game-wrap {
-		width: 96vw;
-		height: 54vw;
-	}
+  .game-wrap {
+    width: 96vw;
+    height: 54vw;
+  }
 }

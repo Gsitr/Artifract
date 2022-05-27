@@ -18,14 +18,16 @@ GAMEPLAY-
     - When both players pass, both lanes "combat" at the same time (not lane by lane like A2). If "draw" - count gold, player with most gold wins, if equal gold - then actual draw.
 
   -SUPPORT ROW and RANGE
-    - Biggest benefit with Support row is that when playing cards (not abilities or items) from it, it costs 1 mana less for each (so if in range game should automatically prefer to cast/preview from Support row hero instead of Combat hero, for 1 less mana). With no specification, card and ability effects can reach from everywhere in a lane, but with a "Melee" specification on a cast, you'll only be able to reach the next other row - so it checks for 3 different rows: your support row, the total combat row and enemy support row. So you can't reach enemy's Support row from your own Support row with a "Melee" cast (this rule is probably enough for this all).
+    - Biggest benefit with Support row is that when playing cards (not abilities or items) from it, it costs 1 mana less for each (so if in range game should automatically prefer to cast/preview from Support row hero instead of Combat hero (when no need to choose Caster), for 1 less mana).
+    - With no specification, card and ability effects can reach from everywhere in a lane, but with a "Melee" specification on a cast, you'll only be able to reach the next other row - so it checks for 3 different rows: your support row, the total combat row and enemy support row. So you can't reach enemy's Support row from your own Support row with a "Melee" cast (this rule is probably enough for this all).
 
   -UNIT/IMPROV DEPLOY
     - Heroes and Creeps can be placed near other allies; opposite to enemy units (defending); above support row supported slots; and on top of your own allies (this last is same rules as A2). Heroes can as well be deployed anywhere in Support rows, but not creeps. Improvements can only be deployed in Support rows.
     - First Hero deploy phase: Players first deploy a hero in either of their support rows, then deploy a hero in their respective offlanes and finally a hero in safe lanes (each deploy is simultanious). (There is already 1 melee creep for each side in both lanes before deploying starts - meaning you can deploy in either of the three middle slots in combat row (or the first deployed support hero's supported slot above it) (and anywhere in support row).)
 
     (Creeps, Heroes = Units)
-    (Improvements, Towers, Ancients = Structures)
+    (Improvements, Towers, Ancient (Towers) = Structures)
+    (Towers, Ancient (Towers) = Towers) (so anything that affects Towers affects Ancients as well)
 
   -HERO ROW/LANE MOVEMENT
     - This is not set in stone, but let's do for now: A hero can move from Support row to Combat row for 2 mana, same deploy requirements as when deploying a unit (but it can't support itself, can't be placed in the slot above it, if something else doesn't support that slot).
@@ -85,7 +87,7 @@ OTHER-
   -LAST CARD PLAYED (probably not in scope this time)
 
   -STUNS and SILENCES
-    - Will probably be turn-based not round-based like now (but doesn't carry over to next round).
-    - Silence no longer disables active items.
-    - Disarms (and active ability and active item Mute (new)), and all other effects still round-based.
-    - These are displayed as Status effects on top of the hero, and Stuns and Silences should somehow as well display its turn cooldown (not really sure how, and since they are kind of small, try for bottom left corner of the whole box of the Status effect circle (so it uses as well that empty space outside of the circle)).
+    - Will probably be turn-based not round-based like now (and doesn't carry over to next round).
+    - Silence no longer disables items.
+    - Disarms (and active ability and active item Mute (new)), and most other effects still round-based.
+    - These are displayed as Status effects on top of the hero, and Stuns and Silences should somehow as well display their turn cooldown (not really sure how, and since they are kind of small, try for bottom left corner of the whole box of the Status effect circle (so it uses as well that empty space outside of the circle)).

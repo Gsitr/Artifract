@@ -144,7 +144,8 @@ body,
 }
 
 .scard,
-.ccard {
+.ccard,
+.sc2-shadow {
   flex-direction: column;
   justify-content: center;
   display: flex;
@@ -398,11 +399,22 @@ body,
 
 
 
+/*.svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+}*/
+
+/* parent of ".left.lane .p0side .sc2" {
+  filter: drop-shadow(-.3vmin -.4vmin .5vmin var(--black));
+}*/
+
 .left.lane .p0side .sc2 {
   background-size: cover;
   clip-path: url(#my-clip-path);
   height: 66%;
   align-self: center;
+  background: var(--creepblue);
 }
 
 

@@ -399,10 +399,10 @@ body,
 
 
 .left.lane .p0side .sc2 {
-	background-size: cover;
+  background-size: cover;
   clip-path: url(#my-clip-path);
-	height: 66%;
-	align-self: center;
+  height: 66%;
+  align-self: center;
 }
 
 

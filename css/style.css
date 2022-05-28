@@ -37,7 +37,7 @@
   /*Item Cards*/
   --creepgray: -webkit-linear-gradient(90deg, #4d5453, #67716f);
   /* Also Colorless */
-  --creepblue: -webkit-linear-gradient(90deg, #434d54, #5a6770);
+  --creepblue: -webkit-linear-gradient(90deg, #2a4354, #3c6078);
   --creepred: -webkit-linear-gradient(90deg, #544347, #705a5f);
   --creepgreen: -webkit-linear-gradient(90deg, #495443, #61705a);
   --creepblack: -webkit-linear-gradient(90deg, #4b4354, #635a70);
@@ -394,6 +394,17 @@ body,
   top: 37%;
   left: 43.6%;
 }
+
+
+
+
+.left.lane .p0side .sc2 {
+	background-size: cover;
+  clip-path: url(#my-clip-path);
+	height: 66%;
+	align-self: center;
+}
+
 
 
 

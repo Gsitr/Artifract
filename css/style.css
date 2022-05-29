@@ -37,7 +37,7 @@
   /*Item Cards*/
   --creepgray: -webkit-linear-gradient(90deg, #4d5453, #67716f);
   /* Also Colorless */
-  --creepblue: -webkit-linear-gradient(90deg, #2a4354, #3c6078);
+  --creepblue: -webkit-linear-gradient(90deg, #324754, #486578);
   --creepred: -webkit-linear-gradient(90deg, #544347, #705a5f);
   --creepgreen: -webkit-linear-gradient(90deg, #495443, #61705a);
   --creepblack: -webkit-linear-gradient(90deg, #4b4354, #635a70);
@@ -49,7 +49,8 @@ body,
 .rune,
 .pgold-cont,
 .ppass,
-.abil, .bcardat, .bcardar, .bcardhe, .hcard, .hspelltext-cont, .hc-mana-cont {
+.abil, .bcardat, .bcardar, .bcardhe, .hcard, .hspelltext-cont, .hc-mana-cont,
+.improv-cont, .improv, .improv-ar, .improv-circle, .improv-he {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -144,8 +145,7 @@ body,
 }
 
 .scard,
-.ccard,
-.sc2-shadow {
+.ccard {
   flex-direction: column;
   justify-content: center;
   display: flex;
@@ -399,24 +399,89 @@ body,
 
 
 
-/*.svg {
-  position: absolute;
+.svg {
+  position: relative;
   width: 0;
   height: 0;
-}*/
-
-/* parent of ".left.lane .p0side .sc2" {
-  filter: drop-shadow(-.3vmin -.4vmin .5vmin var(--black));
-}*/
-
-.left.lane .p0side .sc2 {
-  background-size: cover;
-  clip-path: url(#my-clip-path);
-  height: 66%;
-  align-self: center;
-  background: var(--creepblue);
 }
 
+.improv-cont {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  filter: drop-shadow(-.3vmin -.4vmin .5vmin var(--black)); /* must be parent of .improv */
+}
+
+.improv {
+  display: flex;
+  flex: .66;
+  clip-path: url(#my-clip-path);
+  background: var(--creepblue);
+  width: 100%;
+}
+.improv-inner {
+  flex: 1;
+  position: absolute;
+  clip-path: url(#my-inner-clip-path);
+  background: url(card_art/full_art/10180.png);
+  background-size: cover;
+  align-self: center;
+  width: 80%;
+  height: 45%;
+  top: 22.5%;
+}
+
+.improv-bot {
+  position: absolute;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 26%;
+  top: 55%;
+}
+.improv-ar {
+  position: relative;
+  flex: .6;
+  background-image: url(gfx/cardstat_armor.png);
+  top: 26%;
+  left: 5.2%;
+  opacity: 100%;
+}
+.improv-circle {
+  flex: 1;
+  background-image: url(gfx/improv-circle.png);
+  bottom: 5%;
+}
+.improv-he {
+  position: relative;
+  flex: .6;
+  background-image: url(gfx/cardstat_health.png);
+  top: 25%;
+  right: 5.5%;
+}
+.improv-he {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  color: lavender;
+  font-family: 'Artifact Numbers';
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  font-size: clamp(6px, calc(2px + (22 - 2) * ((100vw - 360px) / 1560)), 28px);
+  text-align: center;
+}
+.improv-ar {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  color: rgb(158, 255, 154);
+  font-family: 'Artifact Numbers';
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  font-size: clamp(5px, calc(2px + (20 - 2) * ((100vw - 360px) / 1560)), 28px);
+  text-align: center;
+}
 
 
 

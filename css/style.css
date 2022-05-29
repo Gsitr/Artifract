@@ -151,7 +151,7 @@ body,
   display: flex;
   flex: 1;
   border-radius: 6%;
-  box-shadow: -.3vmin -.4vmin .5vmin var(--black);
+  box-shadow: -.4vmin -.32vmin .2vmin rgba(0, 0, 0, .5);
   background: var(--cardblue);
 }
 .bcardtop {
@@ -411,7 +411,7 @@ body,
   flex-direction: column;
   justify-content: center;
   position: relative;
-  filter: drop-shadow(-.3vmin -.4vmin .5vmin var(--black)); /* must be parent of .improv */
+  filter: drop-shadow(-.4vmin -.32vmin .15vmin rgba(0, 0, 0, .5)); /* must be parent of .improv */
 }
 
 .improv {
@@ -425,12 +425,12 @@ body,
   flex: 1;
   position: absolute;
   clip-path: url(#my-inner-clip-path);
-  background: url(card_art/full_art/10180.png);
+  background: url(card_art/full_art/10157.jpg);
   background-size: cover;
   align-self: center;
   width: 80%;
-  height: 45%;
-  top: 22.5%;
+  height: 44%;
+  top: 23%;
 }
 
 .improv-bot {
@@ -439,42 +439,16 @@ body,
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 28%;
+  height: 26%;
   top: 55%;
 }
 .improv-ar {
   position: relative;
   flex: .6;
   background-image: url(gfx/cardstat_armor.png);
-  top: 22%;
-  left: 5.2%;
+  top: 26%;
+  left: 4.5%;
   opacity: 100%;
-}
-.improv-icon {
-  position: relative;
-  flex: 1;
-  background-image: url(gfx/improv-icon.png);
-  bottom: 3%;
-  width: 50%;
-}
-.improv-he {
-  position: relative;
-  flex: .6;
-  background-image: url(gfx/cardstat_health.png);
-  top: 21%;
-  right: 5.5%;
-}
-.improv-he {
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-  color: lavender;
-  font-family: 'Artifact Numbers';
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
-  font-size: clamp(6px, calc(2px + (22 - 2) * ((100vw - 360px) / 1560)), 28px);
-  text-align: center;
-}
-.improv-ar {
   justify-content: center;
   flex-direction: column;
   display: flex;
@@ -483,6 +457,30 @@ body,
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
   font-size: clamp(5px, calc(2px + (20 - 2) * ((100vw - 360px) / 1560)), 28px);
   text-align: center;
+  filter: drop-shadow(0 0 .2vmin rgba(0, 0, 0, .8));
+}
+.improv-icon {
+  position: relative;
+  flex: 1;
+  background-image: url(gfx/improv-icon.png);
+  bottom: 10%;
+  filter: drop-shadow(0 0 .2vmin rgba(0, 0, 0, .8));
+}
+.improv-he {
+  position: relative;
+  flex: .6;
+  background-image: url(gfx/cardstat_health.png);
+  top: 24%;
+  right: 5%;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  color: lavender;
+  font-family: 'Artifact Numbers';
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  font-size: clamp(6px, calc(2px + (22 - 2) * ((100vw - 360px) / 1560)), 28px);
+  text-align: center;
+  filter: drop-shadow(0 0 .2vmin rgba(0, 0, 0, .8));
 }
 
 

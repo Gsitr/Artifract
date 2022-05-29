@@ -50,7 +50,7 @@ body,
 .pgold-cont,
 .ppass,
 .abil, .bcardat, .bcardar, .bcardhe, .hcard, .hspelltext-cont, .hc-mana-cont,
-.improv-cont, .improv, .improv-ar, .improv-circle, .improv-he {
+.improv-cont, .improv, .improv-ar, .improv-icon, .improv-he {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -437,29 +437,31 @@ body,
   position: absolute;
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
-  height: 26%;
+  height: 28%;
   top: 55%;
 }
 .improv-ar {
   position: relative;
   flex: .6;
   background-image: url(gfx/cardstat_armor.png);
-  top: 26%;
+  top: 22%;
   left: 5.2%;
   opacity: 100%;
 }
-.improv-circle {
+.improv-icon {
+  position: relative;
   flex: 1;
-  background-image: url(gfx/improv-circle.png);
-  bottom: 5%;
+  background-image: url(gfx/improv-icon.png);
+  bottom: 3%;
+  width: 50%;
 }
 .improv-he {
   position: relative;
   flex: .6;
   background-image: url(gfx/cardstat_health.png);
-  top: 25%;
+  top: 21%;
   right: 5.5%;
 }
 .improv-he {

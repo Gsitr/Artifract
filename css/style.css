@@ -417,20 +417,21 @@ body,
 .improv {
   display: flex;
   flex: .66;
-  clip-path: url(#my-clip-path);
+  clip-path: url(#improv-clip-path);
   background: var(--creepblue);
   width: 100%;
 }
 .improv-inner {
   flex: 1;
   position: absolute;
-  clip-path: url(#my-inner-clip-path);
+  clip-path: url(#improv-inner-clip-path);
   background: url(card_art/full_art/10157.jpg);
-  background-size: cover;
   align-self: center;
   width: 80%;
   height: 44%;
   top: 23%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .improv-bot {

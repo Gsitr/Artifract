@@ -1,0 +1,92 @@
+DECK/CARDS-
+
+  -DECKBUILDING
+    - Deck is split into 2 halves (side by side). Put a minimum of 8 cards in first half and 8 in second. Minimum 3 items in first and 3 in second. The first half of the deck is randomized and placed before the second randomized half in the compelete deck (similarly in shop, you draw items from the first half first). 2 heroes to deploy first and 2 to deploy second and third rounds.
+
+  -CARD MECHANICS
+    - Each card can be played 3 times (not items). With each play, one-third of card's mana crystal is split/fracted, the one-third copy is played and the remaining card goes back into the deck randomly (can't be first or last card). After having played a card 2 times, it will have one-third mana crystal remaining, and therefore can't split further and can't go back into the deck.
+    - With each play, cards' mana costs are increased by 1 (not items). In addition, hero signature cards have their effect increased once, after one play. Signature cards can be only played with their respected hero.
+    - There is 2 cards in hand during hero deployment, 1 from the top and 1 from the bottom of the deck. Draw additonal 2 cards (Day) from the top as the first round starts. Game stars with 4 cards in hand.
+
+
+GAMEPLAY-
+
+  - Combat and support rows. Tower/Ancient/Mana always in middle support row slot.
+    - Tower/Ancient "supports" hero and improvement placement in all other support slots.
+    - Tower also supports the 1 combat slot (unit placement) above it (until Tower is destroyed). Heroes and improvements in support row support unit placement in combat slot above them as well.
+
+  -COMBAT ROW
+    - Melee Creep (1 1) spawn: 1 spawns for the side that has least units in combat row, or 1 spawns for each side if equal number of units (empty = equal too).
+      Melee Creeps will try to spawn closest to the middle slot (if 50-50% then choose slot randomly).
+      For the duration of Night, all melee creeps get +2 +2 and become Mega Melee Creeps (with changed art).
+      If your Tower is destroyed, opponent's Melee Creeps will always be Mega (and if opponent's tower destroyed as well, both sides have this Mega rule).
+    - When both players pass, both lanes "combat" at the same time (not lane by lane like A2). If "draw" - count gold, player with most gold wins, if equal gold - then actual draw.
+
+  -SUPPORT ROW and RANGE
+    - Biggest benefit with Support row is that when playing cards (not abilities or items) from it, it costs 1 mana less for each (so if in range game should automatically prefer to cast/preview from Support row hero instead of Combat hero (when no need to choose Caster), for 1 less mana).
+    - With no specification, card and ability effects can reach from everywhere in a lane, but with a "Melee" specification on a cast, you'll only be able to reach the next other row - so it checks for 3 different rows: your support row, the total combat row and enemy support row. So you can't reach enemy's Support row from your own Support row with a "Melee" cast (this rule is probably enough for this all).
+
+  -UNIT/IMPROV DEPLOY
+    - Heroes and Creeps can be placed near other allies; opposite to enemy units (defending); above support row supported slots; and on top of your own allies (this last is same rules as A2). Heroes can as well be deployed anywhere in Support rows, but not creeps. Improvements can only be deployed in Support rows.
+    - First Hero deploy phase: Players first deploy a hero in either of their support rows, then deploy a hero in their respective offlanes and finally a hero in safe lanes (each deploy is simultanious). (There is already 1 melee creep for each side in both lanes before deploying starts - meaning you can deploy in either of the three middle slots in combat row (or the first deployed support hero's supported slot above it) (and anywhere in support row).)
+
+    (Creeps, Heroes = Units)
+    (Improvements, Towers, Ancient (Towers) = Structures)
+    (Towers, Ancient (Towers) = Towers) (so anything that affects Towers affects Ancients as well)
+
+  -HERO ROW/LANE MOVEMENT
+    - This is not set in stone, but let's do for now: A hero can move from Support row to Combat row for 2 mana, same deploy requirements as when deploying a unit (but it can't support itself, can't be placed in the slot above it, if something else doesn't support that slot).
+    A hero can move from Combat row to any Support slot for 1 mana (and it can as well destroy its own improvements if placed on top of them, and let's make it possible to swap heroes like this, but then costing additional 2 mana, so swapping hero with hero like this is total 3 mana cost). A combat row hero can't move to support row or be swapped if that hero is targeted (by attack arrows) by 2 or more enemy units.
+    - Another benefit with Support row is that you can move Heroes from it to the other lane's Support row, let's say for 3 mana. What happens then is that hero disappears from the slot, and there is a hero icon with an arrow where it's moving, between the support rows. It can only arrive to the other lane at the start of next round (the exact slot is secret for opponent).
+    - These moves have 1 round cooldown, and are displayed as a negative Status effect (circle top of the hero) (and since it's negative, it can be purged by you).
+
+  -DAY/NIGHT CHANGES
+    - First round is Day, second is Night, aso alternating.
+      - Rune spawns only at start of Day (except the first round).
+      - In final version there is more advanced and dynamic Light filtering for board and cards, as well based on total mana left, but for this first version it's enough to dim the board background after Shopping phase - when Night starts, remove filter same time when Day starts next round. (So filter changes at start of new round, for now.)
+      - Melee Creeps get +2 +2 when Night starts and -2 -2 when Night ends (or right after combat phase) (in advanced light filter it will already be near dawn at round end). So if Mega Creeps are 2 hp or less when Night ends, they die.
+      - Players draw 2 cards at start of Day and 1 at start of Night. Drawing the Night card from the bottom of the deck.
+
+  -GOLD and INTERACTIONS
+    - Each player starts game with 3 gold. At the end of each round (after combat phase) the remaining unused Mana from both your lanes is converted to Gold (so a player can potentially have 9 gold after combat, aso, not counting kills or other things).
+    (Mega/Melee Creeps bounty is 1, all other creeps have bounty of 2)
+    (Hero bounty is 5 (AB hero has reduced bounty of 3))
+    (Improvement bounty is 3)
+
+  -MANA and INTERACTIONS
+    - Each player starts with 3 mana in each lane, refreshing and increasing by 1 every round.
+    - When Tower (60 hp) in lane falls, it disappears, mana pool is moved to the place the Tower stood, and behind it Ancient (90 hp) comes into view (similar in appearacnce to Tower). Not final but: Mana then additionally becomes Ancient Armor, and defends 1 hp for each 2 mana (if 3 (odd) mana left, still defends only 1 hp and is used up if opponent damage is 2 or more). Defends during a round and combat phase for all non-piercing damage to tower.
+
+  -MELEE CREEP AGGRO
+    - At any time any hero targets (with arrow) opponent's hero, opponent's mega/melee creeps that are in range will target that hero. And this can't be changed by that hero getting a new non-opponent-hero target. But can change otherwise, and same creeps can aggro other and same opponent heroes same round, if that condition is triggered again.
+
+  -HAND
+    - Max hand size is 12, max 8 cards and max 4 items.
+
+  -SHOPPING PHASE
+   - Drag items from shop to sell them for half of their price (if odd, round down or up randomly).
+
+  -COMBAT/PLAY PREVIEWS (not sure if completely in scope)
+    - Just like all A games do it, there is a continuous preview of upcoming combat phase, as well as a preview when you cast almost anything (that which instantly modifies all kinds of stats).
+    Also all kinds of available, relevant placement previews when doing related cast.
+
+
+OTHER-
+
+  -HERO FOUNTAIN
+    - Between Player Info Area and Hand.
+
+  -ARMOR
+    - All damage instances are first reduced by unit armor (except piercing) and then for each damage instance (including piercing) Armor is reduced by 1 for this round. So Axe has 2 armor, it gets damaged by anything at all, it gets -1 armor, if damaged once more, -1 again, until 0.
+
+  -ABILITY and ITEMS DISPLAY ON HEROES
+    - Talked about this before, so each hero has one row of 3 icons, 1 Ability and 2 items. There can be a small flattened arrow at the bottom of ability icon which means that this hero has additional Passive abilities, and both Active and Passive ability descriptions are displayed when you hover over Ability icon. (Other "Enchancements" are displayed right over this row. And other Status effects are displayed in circles at the top of hero card, in row of 4 this time, since they can be smaller (similar to A2)).
+    - Heroes/Creeps/Improvements have different layout in Hand and on Board (for example everything is wider on board and Creeps don't have same kind of description board, but on hover). Different css.
+
+  -LAST CARD PLAYED (probably not in scope this time)
+
+  -STUNS and SILENCES
+    - Will probably be turn-based not round-based like now (and doesn't carry over to next round).
+    - Silence no longer disables items.
+    - Disarms (and active ability and active item Mute (new)), and most other effects still round-based.
+    - These are displayed as Status effects on top of the hero, and Stuns and Silences should somehow as well display their turn cooldown (not really sure how, and since they are kind of small, try for bottom left corner of the whole box of the Status effect circle (so it uses as well that empty space outside of the circle)).

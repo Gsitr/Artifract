@@ -1,12 +1,12 @@
 DECK/CARDS-
 
   -DECKBUILDING
-    - Deck is split into 2 halves (side by side). Put a minimum of 8 cards in first half and 8 in second. Minimum 3 items in first and 3 in second. The first half of the deck is randomized and placed before the second randomized half in the compelete deck (similarly in shop, you draw items from the first half first). 2 heroes to deploy first and 2 to deploy second and third rounds.
+    - Deck is split into 2 halves (side by side). Put a minimum of 8 cards in first half and 8 in second. Minimum 3 items in first and 3 in second. The first half of the deck is randomized and placed before the second randomized half in the compelete deck (similarly in shop, you draw items from the first half first). 2 heroes to deploy first, 1 to deploy second round and 1 third.
 
   -CARD MECHANICS
     - Each card can be played 3 times (not items). With each play, one-third of card's mana crystal is split/fracted, the one-third copy is played and the remaining card goes back into the deck randomly (can't be first or last card). After having played a card 2 times, it will have one-third mana crystal remaining, and therefore can't split further and can't go back into the deck.
     - With each play, cards' mana costs are increased by 1 (not items). In addition, hero signature cards have their effect increased once, after one play. Signature cards can be only played with their respected hero.
-    - There is 2 cards in hand during hero deployment, 1 from the top and 1 from the bottom of the deck. Draw additonal 2 cards (Day) from the top as the first round starts. Game stars with 4 cards in hand.
+    - There is 3 cards in hand during hero deployment, 2 from the top and 1 from the bottom of the deck. Draw additonal 2 cards (Day) from the top as the first round starts. Game stars with 5 cards in hand.
 
 
 GAMEPLAY-
@@ -31,8 +31,8 @@ GAMEPLAY-
     - First Hero deploy phase: Players first deploy a hero in either of their support rows, then deploy a hero in their respective offlanes and finally a hero in safe lanes (each deploy is simultanious). (There is already 1 melee creep for each side in both lanes before deploying starts - meaning you can deploy in either of the three middle slots in combat row (or the first deployed support hero's supported slot above it) (and anywhere in support row).)
 
     (Creeps, Heroes = Units)
-    (Improvements, Towers, Ancient (Towers) = Structures)
-    (Towers, Ancient (Towers) = Towers) (so anything that affects Towers affects Ancients as well)
+    (Improvements, Towers, Ancients (Towers) = Structures)
+    (Towers, Ancients (Towers) = Towers) (so anything that affects Towers affects Ancients as well)
 
   -HERO ROW/LANE MOVEMENT
     - This is not set in stone, but let's do for now: A hero can move from Support row to Combat row for 2 mana, same deploy requirements as when deploying a unit (but it can't support itself, can't be placed in the slot above it, if something else doesn't support that slot).
@@ -45,7 +45,7 @@ GAMEPLAY-
       - Rune spawns only at start of Day (except the first round).
       - In final version there is more advanced and dynamic Light filtering for board and cards, as well based on total mana left, but for this first version it's enough to dim the board background after Shopping phase - when Night starts, remove filter same time when Day starts next round. (So filter changes at start of new round, for now.)
       - Melee Creeps get +2 +2 when Night starts and -2 -2 when Night ends (or right after combat phase) (in advanced light filter it will already be near dawn at round end). So if Mega Creeps are 2 hp or less when Night ends, they die.
-      - Players draw 2 cards at start of Day and 1 at start of Night. Drawing the Night card from the bottom of the deck.
+      - Players draw 2 cards at start of Day and 1 at start of Night. Drawing from the top of the deck no matter Day/Night.
 
   -GOLD and INTERACTIONS
     - Each player starts game with 3 gold. At the end of each round (after combat phase) the remaining unused Mana from both your lanes is converted to Gold (so a player can potentially have 9 gold after combat, aso, not counting kills or other things).
@@ -70,6 +70,11 @@ GAMEPLAY-
     - Just like all A games do it, there is a continuous preview of upcoming combat phase, as well as a preview when you cast almost anything (that which instantly modifies all kinds of stats).
     Also all kinds of available, relevant placement previews when doing related cast.
 
+  -"SLOW" CARDS
+    - In addition to Quick cards and effects (not passing the turn), and normal cards and effects (passing the turn), the game would have a third tpe of cards - SLOW.
+    Slow cards and effects would pass the turn, but only trigger at the end of opponent's turn (so before your next turn), if opponent potentially doesn't counter it in a way that makes it impossible to trigger.
+    "Annihilation" comes to mind as an ideal candidate for this. If countered - the card would still "split" if possible, and the "one-third" of the card would go back to hand locked for 1 round, with mana not used (the other copy would get locked too).
+
 
 OTHER-
 
@@ -90,3 +95,6 @@ OTHER-
     - Silence no longer disables items.
     - Disarms (and active ability and active item Mute (new)), and most other effects still round-based.
     - These are displayed as Status effects on top of the hero, and Stuns and Silences should somehow as well display their turn cooldown (not really sure how, and since they are kind of small, try for bottom left corner of the whole box of the Status effect circle (so it uses as well that empty space outside of the circle)).
+
+  -SWAP instead of DRAW
+    - Swapping cards in hand with a random card in deck would replace most of the card Draw effects (since card draw effects are often too powerful, and especially don't fit this game).

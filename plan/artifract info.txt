@@ -2,12 +2,12 @@
 DECK/CARDS-
 
   -DECKBUILDING
-    - Deck is split into 2 halves (side by side). Put a minimum of 8 cards in first half and 8 in second. Minimum 3 items in first and 3 in second. The first half of the deck is randomized and placed before the second randomized half in the compelete deck (similarly in shop, you draw items from the first half first). 2 heroes to deploy first, 1 to deploy second round and 1 third.
+    - Deck is split into 2 halves (side by side). Put a minimum of 8 cards in first half and 8 in second. Minimum 3 items in first and 3 in second. The first half of the deck is randomized and placed before the second randomized half in the complete deck (similarly in shop, you draw items from the first half first). 2 heroes to deploy first, 1 to deploy second round and 1 third.
 
   -CARD MECHANICS
     - Each card can be played 3 times (not items). With each play, one-third of card's mana crystal is split/fracted, the one-third copy is played and the remaining card goes back into the deck randomly (can't be first or last card). After having played a card 2 times, it will have one-third mana crystal remaining, and therefore can't split further and can't go back into the deck.
     - With each play, cards' mana costs are increased by 1 (not items). In addition, hero signature cards have their effect increased once, after one play. Signature cards can be only played with their respected hero.
-    - There is 3 cards in hand during hero deployment, 2 from the top and 1 from the bottom of the deck. Draw additonal 2 cards (Day) from the top as the first round starts. Game stars with 5 cards in hand.
+    - There is 3 cards in hand during hero deployment, 2 from the top and 1 from the bottom of the deck. Draw additional 2 cards (Day) from the top as the first round starts. Game stars with 5 cards in hand.
 
 
 GAMEPLAY-
@@ -28,8 +28,8 @@ GAMEPLAY-
     - With no specification, card and ability effects can reach from everywhere in a lane, but with a "Melee" specification on a cast, you'll only be able to reach the next other row - so it checks for 3 different rows: your support row, the total combat row and enemy support row. So you can't reach enemy's Support row from your own Support row with a "Melee" cast (this rule is probably enough for this all).
 
   -UNIT/IMPROV DEPLOY
-    - Heroes and Creeps can be placed near other allies; opposite to enemy units (defending); above support row supported slots; and on top of your own allies (this last is same rules as A2). Heroes can as well be deployed anywhere in Support rows, but not creeps. Improvements can only be deployed in Support rows.
-    - First Hero deploy phase: Players first deploy a hero in either of their support rows, then deploy a hero in their respective offlanes and finally a hero in safe lanes (each deploy is simultanious). (There is already 1 melee creep for each side in both lanes before deploying starts - meaning you can deploy in either of the three middle slots in combat row (or the first deployed support hero's supported slot above it) (and anywhere in support row).)
+    - Heroes and Creeps can be placed near other allies; opposite to enemy units (defending); above support row supported slots; and on top of your own allies (swapping like in A2). Heroes can as well be deployed anywhere in Support rows, but not creeps. Improvements can only be deployed in Support rows.
+    - First Hero deploy phase: Players first deploy a hero in either of their support rows, then deploy a hero in their respective offlanes and finally a hero in safe lanes (each deploy is simultaneous). (There is already 1 melee creep for each side in both lanes before deploying starts - meaning you can deploy in either of the three middle slots in combat row (or the first deployed support hero's supported slot above it) (and anywhere in support row).)
 
     (Creeps, Heroes = Units)
     (Improvements, Towers, Ancients (Towers) = Structures)
@@ -65,7 +65,7 @@ GAMEPLAY-
     - Max hand size is 12, max 8 cards and max 4 items.
 
   -SHOPPING PHASE
-   - (short: less random and more interesting shop, based primarely on A1)
+   - (short: less random and more interesting shop, based primarily on A1)
    - Drag items from shop to sell them for half of their price (if odd, round down or up randomly).
 
   -COMBAT/PLAY PREVIEWS (not sure if completely in scope)
@@ -73,7 +73,7 @@ GAMEPLAY-
     Also all kinds of available, relevant placement previews when doing related cast.
 
   -"SLOW" CARDS
-    - In addition to Quick cards and effects (not passing the turn), and normal cards and effects (passing the turn), the game would have a third tpe of cards - SLOW.
+    - In addition to Quick cards and effects (not passing the turn), and normal cards and effects (passing the turn), the game would have a third type of cards - SLOW.
     Slow cards and effects would pass the turn, but only trigger at the end of opponent's turn (so before your next turn), if opponent potentially doesn't counter it in a way that makes it impossible to trigger.
     "Annihilation" comes to mind as an ideal candidate for this. If countered - the card would still "split" if possible, and the "one-third" of the card would go back to hand locked for 1 round, with mana not used (the other copy would get locked too).
 
@@ -87,7 +87,7 @@ OTHER-
     - All damage instances are first reduced by unit armor (except piercing) and then for each damage instance (including piercing) Armor is reduced by 1 for this round. So Axe has 2 armor, it gets damaged by anything at all, it gets -1 armor, if damaged once more, -1 again, until 0.
 
   -ABILITY and ITEMS DISPLAY ON HEROES
-    - Talked about this before, so each hero has one row of 3 icons, 1 Ability and 2 items. There can be a small flattened arrow at the bottom of ability icon which means that this hero has additional Passive abilities, and both Active and Passive ability descriptions are displayed when you hover over Ability icon. (Other "Enchancements" are displayed right over this row. And other Status effects are displayed in circles at the top of hero card, in row of 4 this time, since they can be smaller (similar to A2)).
+    - Talked about this before, so each hero has one row of 3 icons, 1 Ability and 2 items. There can be a small flattened arrow at the bottom of ability icon which means that this hero has additional Passive abilities, and both Active and Passive ability descriptions are displayed when you hover over Ability icon. (Other "Enchantments" are displayed right over this row. And other Status effects are displayed in circles at the top of hero card, in row of 4 this time, since they can be smaller (similar to A2)).
     - Heroes/Creeps/Improvements have different layout in Hand and on Board (for example everything is wider on board and Creeps don't have same kind of description board, but on hover). Different css.
 
   -LAST CARD PLAYED (probably not in scope this time)

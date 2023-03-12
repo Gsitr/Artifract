@@ -29,7 +29,7 @@ GAMEPLAY-
 
   -UNIT/IMPROV DEPLOY
     - Heroes and Creeps can be placed near other allies; opposite to enemy units (defending); above support row supported slots; and on top of your own allies (swapping like in A2). Heroes can as well be deployed anywhere in Support rows, but not creeps. Improvements can only be deployed in Support rows.
-    - First Hero deploy phase: Players first deploy a hero in either of their support rows, then deploy a hero in their respective offlanes and finally a hero in safe lanes (each deploy is simultaneous). (There is already 1 melee creep for each side in both lanes before deploying starts - meaning you can deploy in either of the three middle slots in combat row (or the first deployed support hero's supported slot above it) (and anywhere in support row).)
+    - First Hero deploy phase: Players first deploy a hero in their respective offlanes (either row) and then a hero in safe lanes (either row) (each deploy is simultaneous). (There is already 1 melee creep for each side in both lanes before deploying starts - meaning you can deploy in either of the three middle slots in combat row.)
 
     (Creeps, Heroes = Units)
     (Improvements, Towers, Ancients (Towers) = Structures)
@@ -49,7 +49,7 @@ GAMEPLAY-
       - Players draw 2 cards at start of Day and 1 at start of Night. Drawing from the top of the deck no matter Day/Night.
 
   -GOLD and INTERACTIONS
-    - Each player starts game with 6 gold. At the end of each round (after combat phase) the remaining HALF of unused Mana from both your lanes is converted to Gold (so a player can potentially have 9 gold after combat, not counting kills or other things) (If odd number of mana, randomly round up or down).
+    - Each player starts game with 6 gold. At the end of each round (after combat phase) the remaining HALF of unused Mana from both your lanes is converted to Gold (so a player can potentially have 9 gold after combat, not counting kills or other things) (if odd number of mana, randomly round up or down).
     (Mega/Melee Creeps bounty is 1, all other creeps have bounty of 2)
     (Hero bounty is 5)
     (Improvement bounty is 3)

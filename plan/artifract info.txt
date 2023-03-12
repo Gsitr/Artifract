@@ -1,3 +1,4 @@
+
 DECK/CARDS-
 
   -DECKBUILDING
@@ -48,7 +49,7 @@ GAMEPLAY-
       - Players draw 2 cards at start of Day and 1 at start of Night. Drawing from the top of the deck no matter Day/Night.
 
   -GOLD and INTERACTIONS
-    - Each player starts game with 3 gold. At the end of each round (after combat phase) the remaining unused Mana from both your lanes is converted to Gold (so a player can potentially have 9 gold after combat, aso, not counting kills or other things).
+    - Each player starts game with 6 gold. At the end of each round (after combat phase) the remaining HALF of unused Mana from both your lanes is converted to Gold (so a player can potentially have 9 gold after combat, not counting kills or other things) (If odd number of mana, randomly round up or down).
     (Mega/Melee Creeps bounty is 1, all other creeps have bounty of 2)
     (Hero bounty is 5 (AB hero has reduced bounty of 3))
     (Improvement bounty is 3)
@@ -64,6 +65,7 @@ GAMEPLAY-
     - Max hand size is 12, max 8 cards and max 4 items.
 
   -SHOPPING PHASE
+   - (short: less random and more interesting shop, based primarely on A1)
    - Drag items from shop to sell them for half of their price (if odd, round down or up randomly).
 
   -COMBAT/PLAY PREVIEWS (not sure if completely in scope)
@@ -96,5 +98,9 @@ OTHER-
     - Disarms (and active ability and active item Mute (new)), and most other effects still round-based.
     - These are displayed as Status effects on top of the hero, and Stuns and Silences should somehow as well display their turn cooldown (not really sure how, and since they are kind of small, try for bottom left corner of the whole box of the Status effect circle (so it uses as well that empty space outside of the circle)).
 
+  -HERO DEATHS
+    - Will probably be turn-based like this: if a hero dies round 1, it gets double the round death turns, so 2; if it dies second round it gets 4 turns death. But with the start of each new round, the previous round number is subtracted from the turns dead heroes have left in fountain. So it becomes less and less disadvntages to die later on, but since the current round number is subtracted, it's not too bad. There would also be a 20 turn cap on hero death, reached in round 10. Let's do an example - a hero dies turn 6, and must wait 12 turns in fountain - you pass right after it's been killed (-1 turn, your hero now has 11 turns remaining), opponent passes as well, new round starts, and the round number 6 is subtracted from 11 turns death timer, and now your hero will respawn in only 5 turns, if you manage to stretch this round for this long, you can deploy your hero already this round.
+
   -SWAP instead of DRAW
     - Swapping cards in hand with a random card in deck would replace most of the card Draw effects (since card draw effects are often too powerful, and especially don't fit this game).
+
